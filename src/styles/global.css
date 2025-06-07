@@ -1,0 +1,175 @@
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  padding: 0 1.5rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+header {
+  text-align: center;
+  padding: 4rem 1rem 2.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+nav {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+nav a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: var(--color-primary);
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+main {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+section {
+  margin-bottom: 4rem;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 1.2rem;
+  border-left: 4px solid var(--color-primary);
+  padding-left: 0.8rem;
+}
+
+p,
+li
+{
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+
+.btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3399ff;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #061525;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.6rem 0;
+  border-top: 1px solid #aaa;
+  z-index: 1000; 
+}
+
+.nav-item {
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.nav-item i {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.Clans {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.clan-card {
+  text-align: center;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  padding-bottom: 5%;
+}
+.clan-img {
+  margin-top: 5%;
+  height: 125px;
+  border-radius: 15%;
+  border: 3px solid var(--color-primary);
+  object-fit: cover;
+}
+
+.clan-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 10px 25px var(--color-secondary); 
+}
+
+
+
+@media (min-width: 768px) {
+  .bottom-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-nav {
+    display: none;
+  }
+}
