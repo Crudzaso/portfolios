@@ -81,6 +81,7 @@
     font-weight: 600;
 }
 
+
 .students__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -95,6 +96,8 @@
 /* Cards de los estudiantes */
 
 .student__card {
+     width: 235px; 
+    min-height: 280px;
     background: white;
     border-radius: 12px;
     padding: 20px;
@@ -104,6 +107,9 @@
     border: 1px solid #e9ecef;
     max-width: 250px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .student__card:hover {
@@ -132,6 +138,7 @@
     margin-bottom: 6px;
     color: #302e49;
     font-weight: 600;
+    word-break: break-word;
 }
 
 .student__role {
