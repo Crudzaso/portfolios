@@ -1,0 +1,15 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="#e9ecef"/>
+  
+  <!-- Person icon -->
+  <g fill="#6c757d">
+    <!-- Head -->
+    <circle cx="100" cy="75" r="25"/>
+    <!-- Body -->
+    <path d="M100 110 C85 110, 70 120, 65 140 L65 160 L135 160 L135 140 C130 120, 115 110, 100 110 Z"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="185" text-anchor="middle" fill="#6c757d" font-family="Arial, sans-serif" font-size="12">Sin Foto</text>
+</svg>

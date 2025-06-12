@@ -1,0 +1,33 @@
+/* Google Fonts: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --font-main: 'Poppins', sans-serif;
+
+  /* Light theme */
+  --color-bg: #ffffff;
+  --color-text: #121212;
+  --color-muted: #666;
+  --color-primary: #171e4a;
+  --color-secondary: #6B5CFF;
+  --color-border: #e0e0e0;
+  --color-primary-btn: #171e4a;
+
+  /* Dark theme */
+  --color-bg-dark: #0f172a;
+  --color-text-dark: #f1f5f9;
+  --color-muted-dark: #3b82f6;
+  --color-secondary-dark: #2563eb;
+  --color-border-dark: #334155;
+  --color-primary-btn-dark: #f1f5f9;
+}
+
+body.dark {
+  --color-bg: var(--color-bg-dark);
+  --color-text: var(--color-text-dark);
+  --color-primary: var(--color-text-dark);
+  --color-muted: var(--color-muted-dark);
+  --color-secondary: var(--color-secondary-dark);
+  --color-border: var(--color-border-dark);
+  --color-primary-btn: var(--color-primary-btn-dark);
+}

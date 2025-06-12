@@ -1,0 +1,19 @@
+.clan__header::before {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../../src/assets/images/Berners_Lee.png);
+}
+
+.clan__name {
+    background: linear-gradient(90deg, #dab989, #30302f);
+}
+
+.student__portfolio {
+    background: linear-gradient(135deg, #dab989, #30302f);
+}
+
+.student__portfolio:hover {
+    background: linear-gradient(135deg, #30302f, #dab989);
+}
+
+.student__card:hover .student__image {
+    border-color: #30302f;
+}
