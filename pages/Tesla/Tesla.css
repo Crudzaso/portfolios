@@ -1,25 +1,32 @@
-/* Contenedor de las tarjetas de perfiles */
-.coder-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-}
-
-.coder-card {
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-    padding: 8%;
-}
-
-.coder-img {
-    width: 100%;
+.clan__header::before {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../../src/assets/images/Tesla.png);
     object-fit: contain;
-    border-radius: 20px;
-    margin-bottom: 10px;
 }
 
+.clan__name {
+    background: linear-gradient(90deg, #991313, #ffcb8d);
+}
 
-.coder-card:hover {
-    transform: translateY(-5px);
+.student__portfolio {
+    background: linear-gradient(135deg, #991313, #ffcb8d);
+}
+
+.student__portfolio:hover {
+    background: linear-gradient(135deg, #ffcb8d, #991313);
+}
+
+.student__card:hover .student__image {
+    border-color: #991313;
+}
+
+.student__card--tutor:hover .student__image {
+    border-color: #ffcb8d;
+}
+
+.student__card {
+    background: white;
+}
+
+.student__card--tutor {
+    background: #991313;
 }

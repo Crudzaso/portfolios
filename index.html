@@ -9,49 +9,104 @@
   <link rel="stylesheet" href="./src/styles/reset.css" />
   <link rel="stylesheet" href="./src/styles/variables.css" />
   <link rel="stylesheet" href="./src/styles/main.css" />
+  <link rel="stylesheet" href="./src/components/Navbar/navbar.css">
+  <link rel="stylesheet" href="./src/components/Footer/footer.css">
+  <link rel="stylesheet" href="./src/styles/global.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="header__container">
-      <h1 class="header__title">Portfolio Bank</h1>
-      <button class="header__toggle-theme" onclick="document.body.classList.toggle('dark')">
-        <span class="header__toggle-icon">🌓</span> Dark Theme
-      </button>
-    </div>
+
+    <!--COMPONENTE NAVBAR-->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__brand">
+          <a href="./index.html"><img class="navbar__img" src="./src/assets/icons/icon_complete.ico"
+              alt="Logo Riwi"></a>
+        </div>
+        <ul class="navbar__menu">
+          <li><a class="navbar__link" href="#">Home</a></li>
+          <li><a class="navbar__link" href="./pages/Berners_Lee/Berners_Lee.html">Berners Lee</a></li>
+          <li><a class="navbar__link" href="./pages/Ritchie/Ritchie.html">Ritchie</a></li>
+          <li><a class="navbar__link" href="./pages/Tesla/Tesla.html">Tesla</a></li>
+          <li><a class="navbar__link" href="./pages/Van_Rossum/Van_Rossum.html" class="active">Van Rossum</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--FIN NAVBAR-->
+
+  <div class="header__container">
+    <h1 class="header__title">Portfolio Bank</h1>
+    <button class="header__toggle-theme" onclick="document.body.classList.toggle('dark')">
+      <span class="header__toggle-icon">🌓</span> Dark Theme
+    </button>
+  </div>
   </header>
 
   <main class="main">
     <section class="clan-list">
       <article class="clan-card">
-        <a class="clan-card__link" href="./pages/Tesla/Tesla.html" target="_blank">
+        <a class="clan-card__link" href="./pages/Tesla/Tesla.html">
           <img class="clan-card__img" src="./src/assets/icons/Tesla.ico" alt="Tesla">
           <h2 class="clan-card__name">Tesla</h2>
         </a>
       </article>
 
       <article class="clan-card">
-        <a class="clan-card__link" href="./pages/Ritchie/Ritchie.html" target="_blank">
+        <a class="clan-card__link" href="./pages/Ritchie/Ritchie.html">
           <img class="clan-card__img" src="./src/assets/icons/RitchieLogo.ico" alt="Ritchie">
           <h2 class="clan-card__name">Ritchie</h2>
         </a>
       </article>
 
       <article class="clan-card">
-        <a class="clan-card__link" href="./pages/Van_Rossum/Van_Rossum.html" target="_blank">
+        <a class="clan-card__link" href="./pages/Van_Rossum/Van_Rossum.html">
           <img class="clan-card__img" src="./src/assets/icons/Van_Rossum.png" alt="Van Rossum">
           <h2 class="clan-card__name">Van Rossum</h2>
         </a>
       </article>
 
       <article class="clan-card">
-        <a class="clan-card__link" href="./pages/Berners_Lee/Berners_Lee.html" target="_blank">
+        <a class="clan-card__link" href="./pages/Berners_Lee/Berners_Lee.html">
           <img class="clan-card__img" src="./src/assets/icons/berners_lee.ico" alt="Berners Lee">
           <h2 class="clan-card__name">Berners Lee</h2>
         </a>
       </article>
+      
     </section>
   </main>
+
+  <footer class="footer">
+    <section class="footer__container">
+      <div class="footer__content">
+        <article class="footer__section">
+          <h3 class="footer__title">Riwi</h3>
+          <p class="footer__description">Proyecto de Clanes - Desarrollo Web</p>
+        </article>
+        <article class="footer__section">
+          <h3 class="footer__title">Clanes</h3>
+          <ul class="footer__list">
+            <li class="list__item"><a class="list__link" href="./pages/Berners_Lee/Berners_Lee.html">Berners
+                Lee</a></li>
+            <li class="list__item"><a class="list__link" href="./pages/Ritchie/Ritchie.html">Ritchie</a></li>
+            <li class="list__item"><a class="list__link" href="./pages/Tesla/Tesla.html">Tesla</a></li>
+            <li class="list__item"><a class="list__link" href="./pages/Van_Rossum/Van_Rossum.html">Van Rossum</a>
+            </li>
+          </ul>
+        </article>
+        <article class="footer__section">
+          <h3 class="footer__title">Contacto</h3>
+          <p class="footer__description">Email: <a class="footer__link" href="mailto:info@riwi.io">info@riwi.io</a></p>
+          <p class="footer__description">Teléfono: <a class="footer__link" href="tel:+573011702259">+57 301
+              1702259</a></p>
+        </article>
+      </div>
+      <div class="footer__bottom">
+        <p class="bottom__copy">&copy; 2025 Riwi. Todos los derechos reservados.</p>
+      </div>
+    </section>
+  </footer>
 </body>
 
 </html>
