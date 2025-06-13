@@ -183,6 +183,23 @@
     transition: all 0.3s ease;
 }
 
+.flags {
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flags img {
+  width: 30px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.flags__img {
+  display: block;
+  cursor: pointer;
+}
+
 /* Responsive del header */
 
 @media (max-width: 768px) {
