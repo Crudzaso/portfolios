@@ -8,18 +8,20 @@
 }
 
 .student__portfolio {
-    background: linear-gradient(135deg, #ffcb8d, #6745ce);
+    background:  #6745ce;
 }
 
 .student__portfolio:hover {
-    background: linear-gradient(135deg, #6745ce, #ffcb8d);
+    background: #ffcb8d;
 }
 
 .student__card:hover .student__image {
+    border: 3px solid transparent;
     border-color: #6745ce;
 }
 
 .student__card--tutor:hover .student__image {
+    border: 5px solid transparent;
     border-color: #dab989;
 }
 

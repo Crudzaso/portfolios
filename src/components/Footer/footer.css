@@ -50,6 +50,14 @@
     color: #6b5cff;
 }
 
+.footer__section--center .footer__title, .footer__section--center .footer__list {
+    text-align: center;
+}
+
+.footer__section--right .footer__title, .footer__section--right .footer__description {
+    text-align: right;
+}
+
 .footer__bottom {
     border-top: 1px solid #34495e;
     padding-top: 20px;
