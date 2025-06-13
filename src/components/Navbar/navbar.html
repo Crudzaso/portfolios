@@ -1,14 +1,32 @@
 <nav class="navbar">
-    <div class="navbar__container">
-        <div class="navbar__brand">
-            <img src="../../src/assets/icons/favicon.ico" alt="Logo Riwi">
-        </div>
-        <ul class="navbar__menu">
-            <li><a href="../../index.html">Inicio</a></li>
-            <li><a href="../Berners_Lee/Berners_Lee.html" class="active">Berners Lee</a></li>
-            <li><a href="../Ritchie/Ritchie.html">Ritchie</a></li>
-            <li><a href="../Tesla/Tesla.html">Tesla</a></li>
-            <li><a href="../Van_Rossum/Van_Rossum.html">Van Rossum</a></li>
-        </ul>
+  <div class="navbar__container">
+    <div class="navbar__brand">
+      <a href="./index.html">
+        <img id="theme-image" class="navbar__img" src="./src/assets/icons/icon_complete.ico" alt="Logo Riwi">
+      </a>
     </div>
+
+    <ul class="navbar__menu">
+      <li><a class="dropdown__link" href="./index.html">Home</a></li>
+
+      <li class="navbar__item dropdown">
+        <a class="dropdown__link" href="#">Sede Medellín</a>
+        <ul class="dropdown__menu">
+          <li><a class="dropdown__link" href="./pages/Berners_Lee/Berners_Lee.html">Berners Lee</a></li>
+          <li><a class="dropdown__link" href="./pages/Ritchie/Ritchie.html">Ritchie</a></li>
+          <li><a class="dropdown__link" href="./pages/Tesla/Tesla.html">Tesla</a></li>
+          <li><a class="dropdown__link" href="./pages/Van_Rossum/Van_Rossum.html">Van Rossum</a></li>
+        </ul>
+      </li>
+
+      <li class="navbar__item dropdown">
+        <a class="dropdown__link" href="#">Sede Barranquilla</a>
+        <ul class="dropdown__menu">
+          <li><a class="dropdown__link" href="#">En desarrollo...</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
+  </div>
 </nav>

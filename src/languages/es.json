@@ -1,0 +1,43 @@
+{
+    "header": {
+        "home": "Inicio",
+        "med_site": "Sede Medellín",
+        "baq_site": "Sede Barranquilla"
+    },
+    "body": {
+        "header_title": "Banco de Portafolios"
+    },
+    
+    "footer": {
+        "footer_riwi": "Proyecto de Clanes - Desarrollo Web",
+        "footer_clans": "Clanes",
+        "footer_contact": "Contacto",
+        "footer_phone": "Teléfono",
+        "copyright": "© 2025 Riwi. Todos los derechos reservados."
+    },
+
+    "Tesla_banner": {
+        "banner_title": "Clan Tesla",
+        "banner_subtitle": "Inspirado en Nikola Tesla. Visionario inventor e ingeniero eléctrico, pionero de la corriente alterna (CA), la radio y la transmisión inalámbrica de energía."
+    },
+
+    "Ritchie_banner": {
+        "banner_title": "Clan Ritchie",
+        "banner_subtitle": "Inspirado en Dennis Ritchie, pionero de la informática moderna y creador del lenguaje C, este clan celebra la innovación, la eficiencia y el pensamiento estructurado. Su legado vive en los sistemas que usamos hoy."
+    },
+
+    "Van_Rossum_banner": {
+        "banner_title": "Clan Van Rossum",
+        "banner_subtitle": "En honor a Guido van Rossum, nuestro clan celebra la elegancia de la simplicidad y el poder de la lógica. Como Python, buscamos ser claros, versátiles y siempre listos para resolver cualquier reto con inteligencia."
+    },
+
+    "Berners_Lee_banner": {
+        "banner_title": "Clan Berners-Lee",
+        "banner_subtitle": "Nombrado en honor a Tim Berners-Lee, inventor de la World Wide Web. Este clan se enfoca en el desarrollo web y las tecnologías de internet."
+    },
+
+    "Cards": {
+        "card_title": "Integrantes del Clan"
+    }
+
+}

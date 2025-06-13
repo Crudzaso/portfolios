@@ -1,0 +1,42 @@
+{
+    "header": {
+        "home": "Home",
+        "med_site": "Medellin site",
+        "baq_site": "Barranquilla site"
+    },
+    "body": {
+        "header_title": "Portfolio Bank"
+    },
+    
+    "footer": {
+        "footer_riwi": "Clans project - Web Development",
+        "footer_clans": "Clans",
+        "footer_contact": "Contact",
+        "footer_phone": "Phone",
+        "copyright": "© 2025 Riwi. All rights reserved."
+    },
+
+    "Tesla_banner": {
+        "banner_title": "Tesla Clan",
+        "banner_subtitle": "Inspired by Nikola Tesla. Visionary inventor and electrical engineer, pioneer of alternating current (AC), radio, and wireless energy transmission."
+    },
+
+    "Ritchie_banner": {
+        "banner_title": "Ritchie Clan",
+        "banner_subtitle": "Inspired by Dennis Ritchie, pioneer of modern computing and creator of the C programming language, this clan celebrates innovation, efficiency, and structured thinking. His legacy lives on in the systems we use today."
+    },
+
+    "Van_Rossum_banner": {
+        "banner_title": "Van Rossum Clan",
+        "banner_subtitle": "In honor of Guido van Rossum, our clan celebrates the elegance of simplicity and the power of logic. Like Python, we strive to be clear, versatile, and always ready to tackle any challenge with intelligence."
+    },
+
+    "Berners_Lee_banner": {
+        "banner_title": "Berners-Lee Clan",
+        "banner_subtitle": "Name after Tim Berners-Lee, inventor of the World Wide Web. This clan focuses on web development and internet technologies."
+    },
+
+    "Cards": {
+        "card_title": "Clan Members"
+    }
+}

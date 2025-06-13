@@ -1,0 +1,33 @@
+.clan__header::before {
+    background: linear-gradient(#00000066, #00000066), url(../../src/assets/images/Van_Rossum.png);
+}
+
+.clan__name {
+    background: linear-gradient(171deg,  #db9b24,  #3c448c);
+}
+
+.student__portfolio {
+    background: #3c448c;
+}
+
+.student__portfolio:hover {
+    background: #db9b24;
+}
+
+.student__card:hover .student__image {
+    border: 3px solid transparent;
+    border-color: #3c448c;
+}
+
+.student__card--tutor:hover .student__image {
+    border: 5px solid transparent;
+    border-color: #db9b24;
+}
+
+.student__card {
+    background: white;
+}
+
+.student__card--tutor {
+    background: linear-gradient(235deg, #ffffff, #3c448c);
+}
