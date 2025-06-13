@@ -4,15 +4,15 @@
 }
 
 .clan__name {
-    background: linear-gradient(90deg, #6745ce, #ffcb8d);
+    background: linear-gradient(171deg, #6745ce, #ffcb8d);
 }
 
 .student__portfolio {
-    background: linear-gradient(135deg, #6745ce, #ffcb8d);
+    background: linear-gradient(135deg, #ffcb8d, #6745ce);
 }
 
 .student__portfolio:hover {
-    background: linear-gradient(135deg, #ffcb8d, #6745ce);
+    background: linear-gradient(135deg, #6745ce, #ffcb8d);
 }
 
 .student__card:hover .student__image {
@@ -28,6 +28,6 @@
 }
 
 .student__card--tutor {
-    background: #6745ce;
+    background: linear-gradient(235deg, #ffffff ,#6745ce)  ;
 }
 

@@ -3,7 +3,7 @@
 }
 
 .clan__name {
-    background: linear-gradient(90deg,  #db9b24,  #3c448c);
+    background: linear-gradient(171deg,  #db9b24,  #3c448c);
 }
 
 .student__portfolio {
@@ -27,5 +27,5 @@
 }
 
 .student__card--tutor {
-    background: #3c448c;
+    background: linear-gradient(235deg, #ffffff, #3c448c);
 }

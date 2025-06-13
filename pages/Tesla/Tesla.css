@@ -4,7 +4,7 @@
 }
 
 .clan__name {
-    background: linear-gradient(90deg, #991313, #ffcb8d);
+    background: linear-gradient(171deg, #991313, #ffcb8d);
 }
 
 .student__portfolio {
@@ -28,5 +28,5 @@
 }
 
 .student__card--tutor {
-    background: #991313;
+    background: linear-gradient(235deg, #ffffff ,#991313);
 }

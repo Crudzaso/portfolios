@@ -19,28 +19,43 @@
 
     <!--COMPONENTE NAVBAR-->
     <nav class="navbar">
-      <div class="navbar__container">
-        <div class="navbar__brand">
-          <a href="./index.html"><img class="navbar__img" src="./src/assets/icons/icon_complete.ico"
-              alt="Logo Riwi"></a>
-        </div>
-        <ul class="navbar__menu">
-          <li><a class="navbar__link" href="#">Home</a></li>
-          <li><a class="navbar__link" href="./pages/Berners_Lee/Berners_Lee.html">Berners Lee</a></li>
-          <li><a class="navbar__link" href="./pages/Ritchie/Ritchie.html">Ritchie</a></li>
-          <li><a class="navbar__link" href="./pages/Tesla/Tesla.html">Tesla</a></li>
-          <li><a class="navbar__link" href="./pages/Van_Rossum/Van_Rossum.html" class="active">Van Rossum</a></li>
+  <div class="navbar__container">
+    <div class="navbar__brand">
+      <a href="./index.html">
+        <img id="theme-image" class="navbar__img" src="./src/assets/icons/icon_complete.ico" alt="Logo Riwi">
+      </a>
+    </div>
+
+    <ul class="navbar__menu">
+      <li><a class="dropdown__link" href="./index.html">Home</a></li>
+
+      <li class="navbar__item dropdown">
+        <a class="dropdown__link" href="#">Sede Medellín</a>
+        <ul class="dropdown__menu">
+          <li><a class="dropdown__link" href="./pages/Berners_Lee/Berners_Lee.html">Berners Lee</a></li>
+          <li><a class="dropdown__link" href="./pages/Ritchie/Ritchie.html">Ritchie</a></li>
+          <li><a class="dropdown__link" href="./pages/Tesla/Tesla.html">Tesla</a></li>
+          <li><a class="dropdown__link" href="./pages/Van_Rossum/Van_Rossum.html">Van Rossum</a></li>
         </ul>
-      </div>
-    </nav>
+      </li>
+
+      <li class="navbar__item dropdown">
+        <a class="dropdown__link" href="#">Sede Barranquilla</a>
+        <ul class="dropdown__menu">
+          <li><a class="dropdown__link" href="#">En desarrollo...</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
+  </div>
+</nav>
+
+    <!--FIN NAVBAR-->
   </header>
-  <!--FIN NAVBAR-->
 
   <div class="header__container">
     <h1 class="header__title">Portfolio Bank</h1>
-    <button class="header__toggle-theme" onclick="document.body.classList.toggle('dark')">
-      <span class="header__toggle-icon">🌓</span> Dark Theme
-    </button>
   </div>
   </header>
 
@@ -71,6 +86,34 @@
         <a class="clan-card__link" href="./pages/Berners_Lee/Berners_Lee.html">
           <img class="clan-card__img" src="./src/assets/icons/berners_lee.ico" alt="Berners Lee">
           <h2 class="clan-card__name">Berners Lee</h2>
+        </a>
+      </article>
+
+      <article class="clan-card">
+        <a class="clan-card__link" href="#">
+          <img class="clan-card__img" src="./src/assets/images/gosling.png" alt="Gosling">
+          <h2 class="clan-card__name">Gosling</h2>
+        </a>
+      </article>
+
+      <article class="clan-card">
+        <a class="clan-card__link" href="#">
+          <img class="clan-card__img" src="./src/assets/images/lovelace.png" alt="Lovelace">
+          <h2 class="clan-card__name">Lovelace</h2>
+        </a>
+      </article>
+
+      <article class="clan-card">
+        <a class="clan-card__link" href="#">
+          <img class="clan-card__img" src="./src/assets/images/linus.png" alt="Linus">
+          <h2 class="clan-card__name">Linus</h2>
+        </a>
+      </article>
+
+      <article class="clan-card">
+        <a class="clan-card__link" href="#">
+          <img class="clan-card__img" src="./src/assets/images/hopper.png" alt="Hopper">
+          <h2 class="clan-card__name">Hopper</h2>
         </a>
       </article>
       
@@ -108,5 +151,5 @@
     </section>
   </footer>
 </body>
-
+<script src="./src/scripts/dark-mode.js"></script>
 </html>

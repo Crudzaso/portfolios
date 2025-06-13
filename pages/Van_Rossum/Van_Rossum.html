@@ -1,389 +1,601 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Van Rossum</title>
-    <link rel="stylesheet" href="../../src/styles/reset.css">
-    <link rel="stylesheet" href="../../src/styles/variables.css">
-    <link rel="stylesheet" href="./Van_Rossum.css">
-    <link rel="stylesheet" href="../../src/components/Navbar/navbar.css">
-    <link rel="stylesheet" href="../../src/components/Footer/footer.css">
-    <link rel="stylesheet" href="../../src/styles/global.css">
-    <link rel="shortcut icon" href="../../src/assets/icons/Van_Rossum.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../src/styles/reset.css" />
+    <link rel="stylesheet" href="../../src/styles/variables.css" />
+    <link rel="stylesheet" href="./Van_Rossum.css" />
+    <link rel="stylesheet" href="../../src/components/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../../src/components/Footer/footer.css" />
+    <link rel="stylesheet" href="../../src/styles/global.css" />
+    <link
+      rel="shortcut icon"
+      href="../../src/assets/icons/Van_Rossum.png"
+      type="image/x-icon"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <!--COMPONENTE NAVBAR-->
-        <nav class="navbar">
-            <div class="navbar__container">
-                <div class="navbar__brand">
-                    <a href="../../index.html"><img class="navbar__img" src="../../src/assets/icons/icon_complete.ico" alt="Logo Riwi"></a>
-                </div>
-                <ul class="navbar__menu">
-                    <li><a class="navbar__link" href="../../index.html">Home</a></li>
-                    <li><a class="navbar__link" href="../Berners_Lee/Berners_Lee.html">Berners Lee</a></li>
-                    <li><a class="navbar__link" href="../Ritchie/Ritchie.html">Ritchie</a></li>
-                    <li><a class="navbar__link" href="../Tesla/Tesla.html">Tesla</a></li>
-                    <li><a class="navbar__link" href="../Van_Rossum/Van_Rossum.html" class="active">Van Rossum</a></li>
-                </ul>
-            </div>
-        </nav>
+      <!--COMPONENTE NAVBAR-->
+      <nav class="navbar">
+        <div class="navbar__container">
+          <div class="navbar__brand">
+            <a href="../../index.html">
+              <img
+                id="theme-image"
+                class="navbar__img"
+                src="../../src/assets/icons/icon_complete.ico"
+                alt="Logo Riwi"
+              />
+            </a>
+          </div>
+
+          <ul class="navbar__menu">
+            <li><a class="dropdown__link" href="../../index.html">Home</a></li>
+
+            <li class="navbar__item dropdown">
+              <a class="dropdown__link" href="#">Sede Medellín</a>
+              <ul class="dropdown__menu">
+                <li>
+                  <a
+                    class="dropdown__link"
+                    href="../Berners_Lee/Berners_Lee.html"
+                    >Berners Lee</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown__link" href="../Ritchie/Ritchie.html"
+                    >Ritchie</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown__link" href="../Tesla/Tesla.html"
+                    >Tesla</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown__link"
+                    href="../Van_Rossum/Van_Rossum.html"
+                    >Van Rossum</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="navbar__item dropdown">
+              <a class="dropdown__link" href="#">Sede Barranquilla</a>
+              <ul class="dropdown__menu">
+                <li><a class="dropdown__link" href="#">En desarrollo...</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <!--FIN NAVBAR-->
 
     <main class="main__content">
-        <div class="content__clan">
-            <header class="clan__header">
-                <h1 class="clan__name">Clan Van Rossum</h1>
-                <p class="clan__description">En honor a Guido van Rossum, nuestro clan celebra la elegancia de la simplicidad y el poder de la lógica. Como Python, buscamos ser claros, versátiles y siempre listos para resolver cualquier reto con inteligencia.</p>
-            </header>
+      <div class="content__clan">
+        <header class="clan__header">
+          <div class="clan__blur">
+            <h1 class="clan__name">Clan Van Rossum</h1>
+            <p class="clan__description">
+              En honor a Guido van Rossum, nuestro clan celebra la elegancia de
+              la simplicidad y el poder de la lógica. Como Python, buscamos ser
+              claros, versátiles y siempre listos para resolver cualquier reto
+              con inteligencia.
+            </p>
+          </div>
+        </header>
 
-            <!--Estudiantes-->
-            <section class="clan__students">
-                <h2 class="students__title">Integrantes del Clan</h2>
-                <div class="students__grid">
-                    <!--CARD DE ESTUDIANTE-->
-                    <article class="student__card student__card--tutor">
-                        <div class="student__image">
-                            <img src="" alt="Foto John Brahian Montoya"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">John Brahian Montoya Serna</h3>
-                            <p class="student__role">Tutor - Coder Riwi</p>
-                            <a href="https://brahianms.github.io/Portafolio/" class="student__portfolio"
-                                target="_blank">Ver Portafolio</a>
-                        </div>
-                    </article>
-                    <!--FIN DE LA CARD-->
+        <!--Estudiantes-->
+        <section class="clan__students">
+          <h2 class="students__title">Integrantes del Clan</h2>
+          <div class="students__grid">
+            <!--CARD DE ESTUDIANTE-->
+            <article class="student__card student__card--tutor">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto John Brahian Montoya"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">John Brahian Montoya Serna</h3>
+                <p class="student__role">Tutor - Coder Riwi</p>
+                <a
+                  href="https://brahianms.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                  >Ver Portafolio</a
+                >
+              </div>
+            </article>
+            <!--FIN DE LA CARD-->
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Abrahan Taborda"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Abrahan Taborda Echavarria</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://abrahan1194.github.io/Portafolio/" class="student__portfolio"
-                                target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Abrahan Taborda"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Abrahan Taborda Echavarria</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://abrahan1194.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Brahiam Ruiz Alzate"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Brahiam Ruiz Alzate</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://brahiamriwi.github.io/Portafolio/" class="student__portfolio"
-                                target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Brahiam Ruiz Alzate"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Brahiam Ruiz Alzate</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://brahiamriwi.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Denis Eduardo Sanchez Loaiza"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Denis Eduardo Sanchez Loaiza</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://dnis-personal-web-page.web.app/" class="student__portfolio"
-                                target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Denis Eduardo Sanchez Loaiza"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Denis Eduardo Sanchez Loaiza</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://dnis-personal-web-page.web.app/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Diego Alejandro Zuluaga Yepes"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Diego Alejandro Zuluaga Yepes</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://alejo11102001.github.io/Portafolio/" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Diego Alejandro Zuluaga Yepes"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Diego Alejandro Zuluaga Yepes</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://alejo11102001.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Emmanuel Jaramillo Zapata"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Emmanuel Jaramillo Zapata</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://emmanueljllo.github.io/portafolio-de-emmanuel/" class="student__portfolio"
-                                target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Emmanuel Jaramillo Zapata"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Emmanuel Jaramillo Zapata</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://emmanueljllo.github.io/portafolio-de-emmanuel/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Jeims Emmanuel Velez Echavarria"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Jeims Emmanuel Velez Echavarria</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://jvelez000.github.io/Portafolio/" class="student__portfolio"
-                                target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Jeims Emmanuel Velez Echavarria"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Jeims Emmanuel Velez Echavarria</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://jvelez000.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Jeison David Olaya Ariza"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Jeison David Olaya Ariza</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://jeisonolaya.github.io/Portafolio/" class="student__portfolio"
-                                target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Jeison David Olaya Ariza"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Jeison David Olaya Ariza</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://jeisonolaya.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Jhon Fredy Rojas Remolina"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Jhon Fredy Rojas Remolina</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://jhonrojas1997.github.io/Portafolio/" class="student__portfolio"
-                                target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Jhon Fredy Rojas Remolina"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Jhon Fredy Rojas Remolina</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://jhonrojas1997.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Jhonatan Morales Nuñez"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Jhonatan Morales Nuñez</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://jmoralesnunez.github.io/Portafolio/" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Jhonatan Morales Nuñez"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Jhonatan Morales Nuñez</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://jmoralesnunez.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Johan Alexander Rivera Vasquez"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Johan Alexander Rivera Vasquez</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://jarv005.github.io/Portafolio/" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Johan Alexander Rivera Vasquez"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Johan Alexander Rivera Vasquez</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://jarv005.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Johan Ramirez Marin"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Johan Ramirez Marin</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://johan192004.github.io/Portafolio/" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Johan Ramirez Marin"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Johan Ramirez Marin</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://johan192004.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Jose Blas Padilla Carmona"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Jose Blas Padilla Carmona</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://j0s3guridad.github.io/PORTAFOLIO./" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Jose Blas Padilla Carmona"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Jose Blas Padilla Carmona</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://j0s3guridad.github.io/PORTAFOLIO./"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Juan Daniel Rua Marin"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Juan Daniel Rua Marin</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://danirua21.github.io/Portafolio/" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Juan Daniel Rua Marin"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Juan Daniel Rua Marin</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://danirua21.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Juan Manuel Arango Arana"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Juan Manuel Arango Arana</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://biohazard23.github.io/Portafolio-Juan-Manuel/" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Juan Steven Cardona Grisales"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Juan Steven Cardona Grisales</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://reijbak.github.io/Portafolio/" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Julio César Molina Montoya"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Julio César Molina Montoya</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://romanoinc.github.io/PORTAFOLIO-JM/" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Luis Carlos hoyos López"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Luis Carlos hoyos López</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://luizaolopez10.github.io/Portafolio-Luis-L-pez/" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Luis David Ducuara Cadavid"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Luis David Ducuara Cadavid</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://luisda87.github.io/Portafolio/" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Miguel Angel Arias Marin"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Miguel Angel Arias Marin</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://miguela207.github.io/Portafolio/" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <article class="student__card">
-                        <div class="student__image">
-                            <img src="" alt="Foto de Omar Andres Uribe Vega"
-                                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
-                        </div>
-                        <div class="student__info">
-                            <h3 class="student__name">Omar Andres Uribe Vega</h3>
-                            <p class="student__role">Coder Riwi</p>
-                            <a href="https://andres-uribe55.github.io/Portafolio/" class="student__portfolio" target="_blank">
-                                Ver Portafolio
-                            </a>
-                        </div>
-                    </article>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Juan Manuel Arango Arana"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Juan Manuel Arango Arana</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://biohazard23.github.io/Portafolio-Juan-Manuel/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
 
-                    <!--AGREGAR MÁS ESTUDIANTES-->
-                </div>
-            </section>
-        </div>
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Juan Steven Cardona Grisales"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Juan Steven Cardona Grisales</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://reijbak.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
+
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Julio César Molina Montoya"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Julio César Molina Montoya</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://romanoinc.github.io/PORTAFOLIO-JM/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
+
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Luis Carlos hoyos López"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Luis Carlos hoyos López</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://luizaolopez10.github.io/Portafolio-Luis-L-pez/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
+
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Luis David Ducuara Cadavid"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Luis David Ducuara Cadavid</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://luisda87.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
+
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Miguel Angel Arias Marin"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Miguel Angel Arias Marin</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://miguela207.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
+
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Omar Andres Uribe Vega"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Omar Andres Uribe Vega</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://andres-uribe55.github.io/Portafolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
+
+            <!--AGREGAR MÁS ESTUDIANTES-->
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer">
-        <section class="footer__container">
-            <div class="footer__content">>
-                <article class="footer__section">
-                    <h3 class="footer__title">Riwi</h3>
-                    <p class="footer__description">Proyecto de Clanes - Desarrollo Web</p>
-                </article>
-                <article class="footer__section">
-                    <h3 class="footer__title">Clanes</h3>
-                    <ul class="footer__list">
-                        <li class="list__item"><a class="list__link" href="../Berners_Lee/Berners_Lee.html">Berners
-                                Lee</a></li>
-                        <li class="list__item"><a class="list__link" href="../Ritchie/Ritchie.html">Ritchie</a></li>
-                        <li class="list__item"><a class="list__link" href="../Tesla/Tesla.html">Tesla</a></li>
-                        <li class="list__item"><a class="list__link" href="../Van_Rossum/Van_Rossum.html">Van Rossum</a>
-                        </li>
-                    </ul>
-                </article>
-                <article class="footer__section">
-                    <h3 class="footer__title">Contacto</h3>
-                    <p class="footer__description">Email: <a class="footer__link"
-                            href="mailto:info@riwi.io">info@riwi.io</a></p>
-                    <p class="footer__description">Teléfono: <a class="footer__link" href="tel:+573011702259">+57 301
-                            1702259</a></p>
-                </article>
-            </div>
-            <div class="footer__bottom">
-                <p class="bottom__copy">&copy; 2025 Riwi. Todos los derechos reservados.</p>
-            </div>
-        </section>
+      <section class="footer__container">
+        <div class="footer__content">
+          >
+          <article class="footer__section">
+            <h3 class="footer__title">Riwi</h3>
+            <p class="footer__description">
+              Proyecto de Clanes - Desarrollo Web
+            </p>
+          </article>
+          <article class="footer__section">
+            <h3 class="footer__title">Clanes</h3>
+            <ul class="footer__list">
+              <li class="list__item">
+                <a class="list__link" href="../Berners_Lee/Berners_Lee.html"
+                  >Berners Lee</a
+                >
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="../Ritchie/Ritchie.html">Ritchie</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="../Tesla/Tesla.html">Tesla</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="../Van_Rossum/Van_Rossum.html"
+                  >Van Rossum</a
+                >
+              </li>
+            </ul>
+          </article>
+          <article class="footer__section">
+            <h3 class="footer__title">Contacto</h3>
+            <p class="footer__description">
+              Email:
+              <a class="footer__link" href="mailto:info@riwi.io"
+                >info@riwi.io</a
+              >
+            </p>
+            <p class="footer__description">
+              Teléfono:
+              <a class="footer__link" href="tel:+573011702259"
+                >+57 301 1702259</a
+              >
+            </p>
+          </article>
+        </div>
+        <div class="footer__bottom">
+          <p class="bottom__copy">
+            &copy; 2025 Riwi. Todos los derechos reservados.
+          </p>
+        </div>
+      </section>
     </footer>
-</body>
-
+  </body>
 </html>
