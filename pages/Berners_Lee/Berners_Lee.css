@@ -20,7 +20,7 @@
 }   
 
 .student__card--tutor:hover .student__image {
-    border: 5px solid transparent;
+    border: 3px solid transparent;
     border-color: #dab989;
 }
 
@@ -29,6 +29,6 @@
 }
 
 .student__card--tutor {
-    background: linear-gradient(235deg, #ffffff , #30302f);
+    background: linear-gradient(0deg, #ffffff , #30302f);
 }
 

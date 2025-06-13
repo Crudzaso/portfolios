@@ -25,11 +25,17 @@
           </a>
         </div>
 
-        <ul class="navbar__menu">
+        <!-- Botón hamburguesa -->
+        <button id="navbar-toggle" class="navbar__toggle" aria-label="Menú">
+          ☰
+        </button>
+
+
+        <ul class="navbar__menu" id="navbar-menu">
           <li><a class="dropdown__link" href="../../index.html">Home</a></li>
 
           <li class="navbar__item dropdown">
-            <a class="dropdown__link" href="#">Sede Medellín</a>
+            <a class="dropdown__link toggle-submenu" href="#">Sede Medellín</a>
             <ul class="dropdown__menu">
               <li>
                 <a class="dropdown__link" href="../Berners_Lee/Berners_Lee.html">Berners Lee</a>
@@ -47,7 +53,7 @@
           </li>
 
           <li class="navbar__item dropdown">
-            <a class="dropdown__link" href="#">Sede Barranquilla</a>
+            <a class="dropdown__link toggle-submenu" href="#">Sede Barranquilla</a>
             <ul class="dropdown__menu">
               <li><a class="dropdown__link" href="#">En desarrollo...</a></li>
             </ul>
@@ -313,7 +319,7 @@
       </div>
     </section>
   </footer>
-</body>
+  <script src="../../src/scripts/menu-hamburguer.js"></script>
 </body>
 
 </html>

@@ -21,60 +21,49 @@
     <header>
       <!--COMPONENTE NAVBAR-->
       <nav class="navbar">
-        <div class="navbar__container">
-          <div class="navbar__brand">
-            <a href="../../index.html">
-              <img
-                id="theme-image"
-                class="navbar__img"
-                src="../../src/assets/icons/icon_complete.ico"
-                alt="Logo Riwi"
-              />
-            </a>
-          </div>
-
-          <ul class="navbar__menu">
-            <li><a class="dropdown__link" href="../../index.html">Home</a></li>
-
-            <li class="navbar__item dropdown">
-              <a class="dropdown__link" href="#">Sede Medellín</a>
-              <ul class="dropdown__menu">
-                <li>
-                  <a
-                    class="dropdown__link"
-                    href="../Berners_Lee/Berners_Lee.html"
-                    >Berners Lee</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown__link" href="../Ritchie/Ritchie.html"
-                    >Ritchie</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown__link" href="../Tesla/Tesla.html"
-                    >Tesla</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown__link"
-                    href="../Van_Rossum/Van_Rossum.html"
-                    >Van Rossum</a
-                  >
-                </li>
-              </ul>
-            </li>
-
-            <li class="navbar__item dropdown">
-              <a class="dropdown__link" href="#">Sede Barranquilla</a>
-              <ul class="dropdown__menu">
-                <li><a class="dropdown__link" href="#">En desarrollo...</a></li>
-              </ul>
-            </li>
-          </ul>
+      <div class="navbar__container">
+        <div class="navbar__brand">
+          <a href="../../index.html">
+            <img id="theme-image" class="navbar__img" src="../../src/assets/icons/icon_complete.ico" alt="Logo Riwi" />
+          </a>
         </div>
-      </nav>
+
+        <!-- Botón hamburguesa -->
+        <button id="navbar-toggle" class="navbar__toggle" aria-label="Menú">
+          ☰
+        </button>
+
+
+        <ul class="navbar__menu" id="navbar-menu">
+          <li><a class="dropdown__link" href="../../index.html">Home</a></li>
+
+          <li class="navbar__item dropdown">
+            <a class="dropdown__link toggle-submenu" href="#">Sede Medellín</a>
+            <ul class="dropdown__menu">
+              <li>
+                <a class="dropdown__link" href="../Berners_Lee/Berners_Lee.html">Berners Lee</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="../Ritchie/Ritchie.html">Ritchie</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="../Tesla/Tesla.html">Tesla</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="../Van_Rossum/Van_Rossum.html">Van Rossum</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a class="dropdown__link toggle-submenu" href="#">Sede Barranquilla</a>
+            <ul class="dropdown__menu">
+              <li><a class="dropdown__link" href="#">En desarrollo...</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
     </header>
     <!--FIN NAVBAR-->
 
@@ -596,5 +585,6 @@
         </div>
       </section>
     </footer>
+    <script src="../../src/scripts/menu-hamburguer.js"></script>
   </body>
 </html>
