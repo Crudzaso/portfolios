@@ -1,15 +1,8 @@
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  /* margin: 0;
-  padding: 0 1.5rem; */
   transition: background 0.4s ease, color 0.4s ease;
 }
-/* 
-.header {
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--color-border);
-} */
 
 .header__container {
   max-width: 1100px;
