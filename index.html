@@ -22,31 +22,44 @@
       <div class="navbar__container">
         <div class="navbar__brand">
           <a href="./index.html">
-            <img id="theme-image" class="navbar__img" src="./src/assets/icons/icon_complete.ico" alt="Logo Riwi">
+            <img id="theme-image" class="navbar__img" src="./src/assets/icons/icon_complete.ico" alt="Logo Riwi" />
           </a>
         </div>
 
-        <ul class="navbar__menu">
-          <li><a class="dropdown__link" href="./index.html" data-section="header" data-value="home">Inicio</a></li>
+        <!-- Botón hamburguesa -->
+        <button id="navbar-toggle" class="navbar__toggle" aria-label="Menú">
+          ☰
+        </button>
+
+
+        <ul class="navbar__menu" id="navbar-menu">
+          <li><a class="dropdown__link" href="./index.html">Home</a></li>
 
           <li class="navbar__item dropdown">
-            <a class="dropdown__link" href="#" data-section="header" data-value="med_site">Sede Medellín</a>
+            <a class="dropdown__link toggle-submenu" href="#">Sede Medellín</a>
             <ul class="dropdown__menu">
-              <li><a class="dropdown__link" href="./pages/Berners_Lee/Berners_Lee.html">Berners Lee</a></li>
-              <li><a class="dropdown__link" href="./pages/Ritchie/Ritchie.html">Ritchie</a></li>
-              <li><a class="dropdown__link" href="./pages/Tesla/Tesla.html">Tesla</a></li>
-              <li><a class="dropdown__link" href="./pages/Van_Rossum/Van_Rossum.html">Van Rossum</a></li>
+              <li>
+                <a class="dropdown__link" href="./pages/Berners_Lee/Berners_Lee.html">Berners Lee</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="./pages/Ritchie/Ritchie.html">Ritchie</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="./pages/Tesla/Tesla.html">Tesla</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="./pages/Van_Rossum/Van_Rossum.html">Van Rossum</a>
+              </li>
             </ul>
           </li>
 
           <li class="navbar__item dropdown">
-            <a class="dropdown__link" href="#" data-section="header" data-value="baq_site">Sede Barranquilla</a>
+            <a class="dropdown__link toggle-submenu" href="#">Sede Barranquilla</a>
             <ul class="dropdown__menu">
               <li><a class="dropdown__link" href="#">En desarrollo...</a></li>
             </ul>
           </li>
         </ul>
-
         <article id="flags" class="flags">
           <div class="flags__item" data-language="es">
             <img src="./src/assets/flags/es.svg" alt="Spanish">
@@ -55,7 +68,6 @@
             <img src="./src/assets/flags/en.svg" alt="English">
           </div>
         </article>
-
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
       </div>
     </nav>
@@ -134,7 +146,8 @@
       <div class="footer__content">
         <article class="footer__section">
           <h3 class="footer__title">Riwi</h3>
-          <p class="footer__description" data-section="footer" data-value="footer_riwi">Proyecto de Clanes - Desarrollo Web</p>
+          <p class="footer__description" data-section="footer" data-value="footer_riwi">Proyecto de Clanes - Desarrollo
+            Web</p>
         </article>
         <article class="footer__section footer__section--center">
           <h3 class="footer__title" data-section="footer" data-value="footer_clans">Clanes</h3>
@@ -150,17 +163,20 @@
         <article class="footer__section footer__section--right">
           <h3 class="footer__title" data-section="footer" data-value="footer_contact">Contacto</h3>
           <p class="footer__description">Email: <a class="footer__link" href="mailto:info@riwi.io">info@riwi.io</a></p>
-          <p class="footer__description" data-section="footer" data-value="footer_phone">Teléfono: <a class="footer__link" href="tel:+573011702259">+57 301
+          <p class="footer__description" data-section="footer" data-value="footer_phone">Teléfono: <a
+              class="footer__link" href="tel:+573011702259">+57 301
               1702259</a></p>
         </article>
       </div>
       <div class="footer__bottom">
-        <p class="bottom__copy" data-section="footer" data-value="copyright">&copy; 2025 Riwi. Todos los derechos reservados.</p>
+        <p class="bottom__copy" data-section="footer" data-value="copyright">&copy; 2025 Riwi. Todos los derechos
+          reservados.</p>
       </div>
     </section>
   </footer>
   <script src="./src/scripts/dark-mode.js"></script>
   <script src="./src/scripts/translation.js"></script>
+  <script src="./src/scripts/menu-hamburguer.js"></script>
 </body>
 
 
