@@ -71,6 +71,16 @@
 }
 
 /* Responsive */
+@media (max-width: 850px) {
+    .footer__section--center .footer__title, .footer__section--center .footer__list {
+        text-align: left;
+    }
+    
+    .footer__section--right .footer__title, .footer__section--right .footer__description {
+        text-align: left;
+    }
+}
+
 @media (max-width: 768px) {
     .footer__content {
         grid-template-columns: 1fr;
