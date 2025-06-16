@@ -178,13 +178,13 @@
 }
 
 @media (max-width: 600px) {
-  .navbar__menu {
+  .navbar {
     display: none;
   }
   .navbar__mobile {
     display: block;
   }
-  .mobile__menu {
+  .navbar__menu {
     display: flex;
     justify-content: space-between;
     height: 70px;
@@ -198,20 +198,14 @@
     width: 30%;
     padding: 0 7px;
   }
-  .mobile__logo {
-    max-height: 40px;
-    list-style: none;
+  .navbar__logo {
+    max-width: 142px;
   }
-  .mobile__img{
-    height: 100%;
-    width: auto;
+  .navbar__img{
+    width: 100%;
   }
   .dropdown__link {
     padding: 5px 7px;
-    text-align: center;
+    text-align: start;
   }
-  .dropup__menu, .mobile__item {
-    list-style: none;
-  }
-
 }
