@@ -48,7 +48,7 @@ body {
 
 .clan-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
   gap: 2rem;
   animation: fadeIn 0.8s ease;
 }
@@ -61,6 +61,10 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   backdrop-filter: blur(5px);
   text-align: center;
+}
+
+.clan-card:last-child {
+  grid-column-start: 2;
 }
 
 .clan-card:hover {
