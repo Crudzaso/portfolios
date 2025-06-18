@@ -136,6 +136,36 @@
   display: none;
 }
 
+.language-switcher {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-option {
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: var(--color-txt);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover solo si NO está activo */
+.lang-option:not(.active):hover {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+/* Estilo del idioma activo */
+.lang-option.active {
+  background-color: var(--color-secondary);
+  color: #fff;
+  cursor: default; 
+}
+
+
 @media (min-width: 601px) and (max-width: 1024px) {
   .navbar__toggle {
     display: block;
