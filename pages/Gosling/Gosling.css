@@ -1,14 +1,15 @@
 .clan__header::before {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../../src/assets/icons/gosling_logo.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../src/assets/images/java.png);
+    background-size: contain;
     object-fit: contain;
 }
 
 .clan__name {
-    background: linear-gradient(171deg, #8B0000, #004D98);
+    background: linear-gradient(222deg, #8B0000, #004D98);
 }
 
 .student__portfolio {
-    background:  #8B0000;
+    background: #8B0000;
 }
 
 .student__portfolio:hover {
@@ -30,6 +31,5 @@
 }
 
 .student__card--tutor {
-    background: linear-gradient(0deg, #ffffff ,#8B0000)  ;
+    background: linear-gradient(0deg, #ffffff, #8B0000);
 }
-
